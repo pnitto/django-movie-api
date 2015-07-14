@@ -1,8 +1,9 @@
 
-# Create your views here.
+#
+from django.shortcuts import render
 from django.views.generic import ListView, CreateView, DeleteView, DetailView
-
-from movie.models import Movie
+import requests
+from .models import Movie
 
 
 class MovieListView(ListView):
